@@ -1,0 +1,139 @@
+/*resetting default values*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow:initial;
+}
+
+/*setting background color*/
+body{
+    background-color: rgb(243, 246, 230);
+}
+
+/*title*/
+h1{
+    font-size: xx-large;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+/*customising navbar*/
+nav{
+    position: fixed;
+    background-color: rgb(112, 215, 89);
+    width: 100vw;
+    height:6%;
+    padding-top: 6px;
+    border-radius: 0% 0% 50% 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/*items next to eachother*/
+li{
+    display:inline;
+}
+
+/*navbar items link*/
+a{
+    text-decoration: none; /*getting rid of default styling*/
+    color: rgb(85, 60, 5);
+    font-weight: 700;
+}
+
+/*navbar items on hover behaviour*/
+a:hover{
+    font-size: x-large;
+}
+
+/*each section of scrolling page given a set space*/
+section{
+    height:100vh;
+    padding-top: 4%;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 100vw;
+}
+
+label,input{
+    position: relative;    
+    display: flex; 
+    left: 38vw;   
+}
+
+input{
+    padding:2%;
+}
+
+#buttons{
+    position: fixed;
+    /* position: relative;  makes it go on top of navbar when scrolling*/ 
+    top: 10%;
+    margin-left: 30vw;
+    width: 40vw;
+    height:15vh;
+    display: flex; /*centering buttons in div*/
+    justify-content: center;
+    /* background-color: rgb(255, 132, 132); */
+    
+
+}
+
+/*styling section 1 writing*/
+.green{
+    columns: 2;
+    word-spacing: 0.3em;
+    line-height: 2em;
+    color: rgb(4, 65, 4);
+    font-weight: 850;
+    font-size: large;
+}
+
+/*styling writing*/
+p{
+    text-align: center;
+    word-spacing: 0.3em;
+    line-height: 2em;
+    color: rgb(4, 65, 4);
+    font-weight: 850;
+    font-size: large; 
+}
+
+/*4 buttons*/
+button{
+    width: 40%;
+    height: 70%;
+    border: none;
+    border-radius: 50% 10%;
+    box-shadow: -3px 4px 2px  rgb(66, 37, 37); /*outer shadow when button is 'un-clicked' and pushing out*/
+    background-color: rgb(239, 212, 77);
+    margin-right: 20px;
+    
+}
+
+/*button hover properties*/
+button:hover{
+    box-shadow:3px -1px 2px 2px inset rgb(66, 37, 37); /*inset shadow to show effect of button being 'clicked' and pushed in*/
+}
+
+/*media query for laptop*/
+
+@media screen and (max-width : 1439px ){
+    section{
+        height: 150vh;
+    }
+}
+
+/*media query for tablet (not resized browser)*/
+@media screen and (max-width:1024px){
+    section{
+        height:90vh;
+    }
+
+    h1{
+        padding-top: 40px;
+    }
+}
