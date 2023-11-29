@@ -1,1 +1,0 @@
-# simple-JS-quiz-game-website
