@@ -10,7 +10,7 @@ MarkScheme.set("press 2", 2);
 
 //when started
 function go(){
-    alert("started");
+    alert("Welcome to the quiz, press start to begin");
     //map to store user answers to compare with markscheme answer map.
     // const answers= new Map();
     // answers.set("a",200);
